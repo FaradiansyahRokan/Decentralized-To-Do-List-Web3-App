@@ -46,36 +46,33 @@ todo-dapp/
 
 ### 1. Clone the repository
 
-git clone https://github.com/yourusername/todo-dapp.git
+git clone https://github.com/FaradiansyahRokan/Decentralized-To-Do-List-Web3-App.git
 cd todo-dapp
-2. Install Hardhat & Dependencies
+### 2. Install Hardhat & Dependencies
+
 npm install --save-dev hardhat
 npm install @nomicfoundation/hardhat-toolbox
-3. Compile Smart Contract
-bash
-Copy
-Edit
+### 3. Compile Smart Contract
 npx hardhat compile
-4. Start Hardhat Local Node
-
+### 4. Start Hardhat Local Node
 npx hardhat node
 ⚠️ Keep this terminal running
 
-5. Deploy Smart Contract to Local Network
+### 5. Deploy Smart Contract to Local Network
 Open new terminal and run:
-
 npx hardhat run scripts/deploy.js --network localhost
-💻 Frontend Setup
+
+## 💻 Frontend Setup
 Go into frontend folder:
-
-
 cd frontend
 npm install
-6. Install TailwindCSS
+
+### 6. Install TailwindCSS
 
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
-7. Configure Tailwind in tailwind.config.js
+
+### 7. Configure Tailwind in tailwind.config.js
 
 content: [
   "./src/**/*.{js,jsx,ts,tsx}",
@@ -84,20 +81,22 @@ theme: {
   extend: {},
 },
 plugins: [],
-8. Add Tailwind to index.css
+
+### 8. Add Tailwind to index.css
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-9. Copy ABI File
+
+### 9. Copy ABI File
 From root directory:
 
-
 cp ./artifacts/contracts/TodoList.sol/TodoList.json ./frontend/src/
-10. Start React App
 
+### 10. Start React App
 npm start
-🦊 Connect MetaMask
+
+## 🦊 Connect MetaMask
 Open MetaMask
 
 Click “Add Network” → Custom RPC
@@ -112,7 +111,7 @@ Import an account from Hardhat (use private key shown in npx hardhat node)
 
 Ensure you’re connected to this new localhost network
 
-⚙️ Usage
+## ⚙️ Usage
 Type a task and click “Add Task”
 
 It’ll be saved to the blockchain
@@ -121,11 +120,11 @@ Only the task creator can delete the task
 
 Refreshing will still display tasks if local blockchain is still running
 
-📦 Build for Production
+## 📦 Build for Production
 
 npm run build
 
-🧠 Tech Stack
+## 🧠 Tech Stack
 Solidity
 Hardhat
 ReactJS
