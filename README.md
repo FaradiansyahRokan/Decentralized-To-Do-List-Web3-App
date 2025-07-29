@@ -60,20 +60,25 @@ npx hardhat compile
 ### 4. Start Hardhat Local Node
 
 npx hardhat node 
-\n⚠️ Keep this terminal running
+
+#⚠️ Keep this terminal running
 
 ### 5. Deploy Smart Contract to Local Network
 Open new terminal and run:
+
 npx hardhat run scripts/deploy.js --network localhost
 
 ## 💻 Frontend Setup
 Go into frontend folder:
+
 cd frontend
+
 npm install
 
 ### 6. Install TailwindCSS
 
 npm install -D tailwindcss postcss autoprefixer
+
 npx tailwindcss init -p
 
 ### 7. Configure Tailwind in tailwind.config.js
@@ -108,9 +113,13 @@ Click “Add Network” → Custom RPC
 Add the following:
 
 Network Name: Localhost 8545
+
 New RPC URL: http://127.0.0.1:8545
+
 Chain ID: 31337
+
 Currency Symbol: ETH
+
 Import an account from Hardhat (use private key shown in npx hardhat node)
 
 Ensure you’re connected to this new localhost network
