@@ -59,8 +59,8 @@ npm install @nomicfoundation/hardhat-toolbox
 npx hardhat compile
 ### 4. Start Hardhat Local Node
 
-npx hardhat node
-⚠️ Keep this terminal running
+npx hardhat node 
+\n⚠️ Keep this terminal running
 
 ### 5. Deploy Smart Contract to Local Network
 Open new terminal and run:
