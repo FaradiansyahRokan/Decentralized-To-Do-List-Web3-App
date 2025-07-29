@@ -47,14 +47,18 @@ todo-dapp/
 ### 1. Clone the repository
 
 git clone https://github.com/FaradiansyahRokan/Decentralized-To-Do-List-Web3-App.git
+
 cd todo-dapp
 ### 2. Install Hardhat & Dependencies
 
 npm install --save-dev hardhat
+
 npm install @nomicfoundation/hardhat-toolbox
+
 ### 3. Compile Smart Contract
 npx hardhat compile
 ### 4. Start Hardhat Local Node
+
 npx hardhat node
 ⚠️ Keep this terminal running
 
